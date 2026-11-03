@@ -34,14 +34,6 @@ public class GarageServiceImp implements GarageService {
         // Save first to generate the database ID
         Garage savedGarage = garageRepository.save(garage);
 
-        // Generate the readable garage number
-        String garageNumber = String.format(
-                "GASER-GAR-%06d",
-                savedGarage.getGarageId()
-        );
-
-        savedGarage.setGarageNumber(garageNumber);
-
         return garageRepository.save(savedGarage);
     }
 
@@ -63,7 +55,6 @@ public class GarageServiceImp implements GarageService {
         Garage garage = getGarageById(id);
 
         garage.setGarageName(garageDetails.getGarageName());
-        garage.setGarageNumber(garageDetails.getGarageNumber());
         garage.setGarageMail(garageDetails.getGarageMail());
 
         return garageRepository.save(garage);
