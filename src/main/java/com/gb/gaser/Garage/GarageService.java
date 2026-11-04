@@ -1,17 +1,20 @@
 
 package com.gb.gaser.Garage;
 
+import com.gb.gaser.Garage.Dto.GarageRequest;
+import com.gb.gaser.Garage.Dto.GarageResponse;
+
 import java.util.List;
 
 public interface GarageService {
 
-    Garage createGarage(Garage garage);
+    Garage createGarage(GarageRequest garageRequest);
 
-    List<Garage> getAllGarages();
+    List<GarageResponse> getAllGarages();
 
-    Garage getGarageById(Long id);
+    GarageResponse getGarageById(Long id);
 
-    Garage updateGarage(Long id, Garage garageDetails);
+    GarageResponse updateGarage(Long id, GarageRequest garageRequest);
 
     void deleteGarage(Long id);
 }

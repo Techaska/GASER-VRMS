@@ -1,4 +1,4 @@
-package com.gb.gaser.Dto;
+package com.gb.gaser.Customer.Dto;
 
 public record CustomerResponse(
         Long id,

@@ -1,7 +1,7 @@
 package com.gb.gaser.Customer;
 
-import com.gb.gaser.Dto.CustomerRequest;
-import com.gb.gaser.Dto.CustomerResponse;
+import com.gb.gaser.Customer.Dto.CustomerRequest;
+import com.gb.gaser.Customer.Dto.CustomerResponse;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

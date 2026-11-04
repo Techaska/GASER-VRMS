@@ -55,6 +55,9 @@ public class Garage {
     @Column(nullable = false, updatable = false)
     private LocalDateTime createdAt;
 
+    @Column(nullable = false)
+    private boolean approved = false;
+
     @OneToMany(mappedBy = "garage")
     private List<ServiceRecord> serviceRecords = new ArrayList<>();
 

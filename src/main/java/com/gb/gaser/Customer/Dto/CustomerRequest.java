@@ -1,4 +1,4 @@
-package com.gb.gaser.Dto;
+package com.gb.gaser.Customer.Dto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
